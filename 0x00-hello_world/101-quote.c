@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
-* main - function prints the required text and returns 1
-* Return: 1
+* main - Writes the required quote
+* Return: 0
 */
+
 int main(void)
 {
 fwrite("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59, 1, stderr);
