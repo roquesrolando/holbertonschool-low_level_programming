@@ -1,16 +1,9 @@
-#include<stdio.h>
-int main() {
-    int intType;
-    float floatType;
-    double doubleType;
-    char charType;
+#include <stdio.h>
+char *variabletype[] = {"char", "unsigned char", "signed char", "int", "unsigned int", "short", "unsigned short", "long", "unsigned long", "long long", "unsigned long long"};
 
-    // sizeof evaluates the size of a variable
-    printf("Size of int: %zu bytes\n", sizeof(intType));
-    printf("Size of float: %zu bytes\n", sizeof(floatType));
-    printf("Size of double: %zu bytes\n", sizeof(doubleType));
-    printf("Size of char: %zu byte\n", sizeof(charType));
-    
+int main() {
+    for (int i = 0; i < 11;++i) {
+        printf("Size of %s is %u\n",variabletype[i], (unsigned int)(sizeof(variabletype[i])));
+    }
     return 0;
 }
-
