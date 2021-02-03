@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=$CFILE
+clang++ -S -mllvm --x86-asm-syntax=$CFILE
