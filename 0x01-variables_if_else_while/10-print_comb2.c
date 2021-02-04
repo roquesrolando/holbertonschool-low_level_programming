@@ -11,11 +11,12 @@ int main(void)
 {
 	putchar((a / 10) + '0');
 	putchar((a % 10) + '0');
-}
-	if (a <= 99)
+
+	if (a <= 98)
 {
 	putchar(',');
 	putchar(' ');
+}
 }
 	putchar ('\n');
 	return (0);
