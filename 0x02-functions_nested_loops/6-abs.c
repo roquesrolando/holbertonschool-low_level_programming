@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-int abs(int mod)
+int _abs(int mod)
 {
 	if (mod > 0)
 	{
