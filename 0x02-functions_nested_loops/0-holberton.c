@@ -3,7 +3,7 @@
  * main - function prints the required text
  * Returns: 0
  */
-int man(void)
+int main(void)
 {
 	_putchar('H');
 	_putchar('o');
