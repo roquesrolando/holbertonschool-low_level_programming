@@ -2,18 +2,18 @@
 /*
  * main - prints fibonacci
  *
-*/
+ */
 
-void main(void)
+int main(void)
 {
 
-	int fib1 = 1, fib2 = 2, fib3, num, count = 0;
+	unsigned long fib1 = 1, fib2 = 2, fib3, num, count = 0;
 
 	num = 50;
 
-	printf("%d\n", fib1);
+	printf("%lu, ", fib1);
 
-	printf("%d\n", fib2);
+	printf("%lu, ", fib2);
 
 	count = 2;
 
@@ -25,11 +25,11 @@ void main(void)
 
 		count++;
 
-		printf("%d\n", fib3);
+		printf("%lu, ", fib3);
 
 		fib1 = fib2;
 
 		fib2 = fib3;
-
 	}
+	printf("\n");
 }
