@@ -8,8 +8,8 @@
 void times_table(void)
 {
 	int num;
-	int multiple;
-	int nineTimes;
+	int multi;
+	int nine;
 
 
 	for (num = 0; num < 10; num++)
@@ -17,20 +17,20 @@ void times_table(void)
 	{
 		_putchar('0');
 
-		for (multiple = 1; multiple < 10; multiple++)
+		for (multi = 1; multi < 10; multi++)
 		{
 			_putchar(44);
 			_putchar(32);
 
-			nineTimes = num * multiple;
+			nine = num * multi;
 
-			if (nineTimes < 10)
+			if (nine < 10)
 				_putchar(32);
 
 			else
-				_putchar((nineTimes / 10) + '0');
+				_putchar((nine / 10) + '0');
 
-			_putchar((nineTimes % 10) + '0');
+			_putchar((nine % 10) + '0');
 		}
 
 		_putchar('\n');
