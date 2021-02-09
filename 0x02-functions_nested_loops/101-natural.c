@@ -7,11 +7,12 @@
 
 int main(void)
 {
-	int num = 3;
+	int num;
 	int three;
 	int five;
 	int total = 0;
 
+	num = 3;
 	while (num < 1024)
 	{
 		three = num % 3;
