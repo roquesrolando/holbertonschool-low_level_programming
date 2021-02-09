@@ -10,9 +10,10 @@ int main(void)
 	int num;
 	int three;
 	int five;
-	int total = 0;
+	int total;
 
 	num = 3;
+	total = 0;
 	while (num < 1024)
 	{
 		three = num % 3;
