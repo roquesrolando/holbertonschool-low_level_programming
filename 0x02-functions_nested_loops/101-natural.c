@@ -1,18 +1,20 @@
 #include <stdio.h>
-int main ()
+int main(void)
 {
 	int num = 3;
-	int multipleOfThree;
-	int multipleOfFive;
-	int sum =0;
-	while (num < 1024) {
-		multipleOfThree = num % 3;
-		multipleOfFive = num % 5;
-		if (multipleOfThree == 0 || multipleOfFive == 0){
-			sum +=num;
+	int three;
+	int five;
+	int total = 0;
+	while (num < 1024)
+	{
+		three = num % 3;
+		five = num % 5;
+		if (three == 0 || five == 0)
+		{
+			total += num;
 		}
 		num++;
 	}
-	printf("%i ", sum);
+	printf("%i ", total);
 	printf(" \n");
 }
