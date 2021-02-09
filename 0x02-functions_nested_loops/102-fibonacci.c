@@ -10,7 +10,7 @@ int main(void)
 
 	unsigned long fib1 = 1, fib2 = 2, fib3, num, count = 0;
 
-	num = 50;
+	num = 52;
 
 	printf("%lu, ", fib1);
 
@@ -30,7 +30,7 @@ int main(void)
 		fib1 = fib2;
 
 		fib2 = fib3;
-		if (count != 50)
+		if (count != 52)
 			printf(", ");
 	}
 	printf("\n");
