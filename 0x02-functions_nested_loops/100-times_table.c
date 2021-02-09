@@ -1,11 +1,10 @@
 #include "holberton.h"
 /**
- * times_table - function prints multiples of 9
+ * print_times_table - prints out times table
  *
- * @n: valued being sent
+ * @n: valued being sent to the funcation
  */
-
-void print_times_tablet(int n)
+void print_times_table(int n)
 {
 	int num;
 	int multi;
@@ -13,7 +12,9 @@ void print_times_tablet(int n)
 
 	if (n >= 0 && n <= 15)
 	{
+
 		for (num = 0; num <= n; num++)
+
 		{
 			_putchar('0');
 
@@ -25,6 +26,7 @@ void print_times_tablet(int n)
 				total = num * multi;
 
 				if (total <= 99)
+
 					_putchar(32);
 
 				if (total <= 9)
@@ -36,13 +38,13 @@ void print_times_tablet(int n)
 					_putchar((total / 100) + '0');
 					_putchar(((total / 10)) % 10 + '0');
 				}
+
 				else if (total <= 99 && total >= 10)
 				{
 					_putchar((total / 10) + '0');
 				}
 				_putchar((total % 10) + '0');
 			}
-
 			_putchar('\n');
 		}
 	}
