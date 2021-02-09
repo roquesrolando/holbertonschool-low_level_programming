@@ -1,43 +1,46 @@
 #include "holberton.h"
-
 /**
- * times_table - prints the times table of an integer starting with zero
- * @r: times table is being printed
- * Return: Always 0.
+ * print_times_table - Prints the n times_table.
+ * @n: Integer to define the times table.
+ *
+ * Return: There is no return value (void).
  */
-
-void times_table(int r)
+void print_times_table(int n)
 {
-	int x, y, product;
+	int i, j, result = 0;
 
-	if (r >= 0 && r <= 15)
+	if (n >= 0 && n <= 15)
 	{
-		for (x = 0; x <= r; x++)
+		for (i = 0; i <= n; i++)
 		{
-			_putchar('0');
-
-			for (y = 1; y <= r; y++)
+			for (j = 0; j <= n; j++)
 			{
-				_putchar(',');
-				_putchar(' ');
-
-				product = x * y;
-
-				if (product <= 99)
-					_putchar(' ');
-				if (product <= 9)
-					_putchar(' ');
-
-				if (product >= 100)
+				result = i * j;
+				if (j > 0)
 				{
-					_putchar((product / 100) + '0');
-					_putchar(((product / 10)) + '0');
+					_putchar(',');
+					_putchar(' ');
+					if (result < 10)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + result);
+					}
+					else if (result >= 10 && result < 100)
+					{
+						_putchar(' ');
+						_putchar('0' + (result / 10));
+						_putchar('0' + (result % 10));
+					}
+					else if (result >= 100)
+					{
+						_putchar('0' + (result / 100));
+						_putchar('0' + ((result / 10) % 10));
+						_putchar('0' + (result % 10));
+					}
 				}
-				else if (product <= 99 && product >= 10)
-				{
-					_putchar((product / 10) + '0');
-				}
-				_putchar ((product % 10) + '0');
+				else
+					_putchar('0' + result);
 			}
 			_putchar('\n');
 		}
