@@ -1,14 +1,16 @@
 #include "holberton.h"
-/**
- * @print_alphabet - prints alphabet
- */
-	void print_alphabet(void)
-	{
-		char lowercaseletter;
 
-		for (lowercaseletter = 97; lowercaseletter <= 122; lowercaseletter++)
-		{
-			_putchar(lowercaseletter);
-		}
-		_putchar('\n');
+/**
+ * print_alphabet - prints out alphabet in lowercase letter
+ */
+
+void print_alphabet(void)
+{
+	char lowercase;
+	
+	for (lowercase = 97; lowercase <= 122; lowercase++)
+	{
+		_putchar(lowercase);
 	}
+	_putchar('\n');
+}
