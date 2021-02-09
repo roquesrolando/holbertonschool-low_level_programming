@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * main - function prints the required text
- * Returns: 0
+ * Return: 0
  */
 int main(void)
 {
