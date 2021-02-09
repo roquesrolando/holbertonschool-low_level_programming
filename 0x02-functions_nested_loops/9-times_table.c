@@ -1,40 +1,40 @@
 #include "holberton.h"
-
 /**
- * times_table - prints the times table of an integer starting with zero
+ * times_table - function prints multiples of 9
  *
- * Return: Always 0.
+ * Return: 0
  */
 
 void times_table(void)
 {
-	int x, y, product;
+	int num;
+	int multiple;
+	int nineTimes;
 
-	for (x = 0; x <= 9; x++)
+
+	for (num = 0; num < 10; num++)
+
 	{
-		for (y = 0; y <= 9; y++)
+		_putchar('0');
+
+		for (multiple = 1; multiple < 10; multiple++)
 		{
-			product = x * y;
-			if (y != 0)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			if (y == 0)
-			{
-				_putchar('0');
-			}
-			else if (product >= 10)
-			{
-				_putchar((product / 10) + '0');
-				_putchar((product % 10) + '0');
-			}
-			else if ((product < 10) && (y != 0))
-			{
-				_putchar(' ');
-				_putchar((product % 10) + '0');
-			}
+			_putchar(44);
+			_putchar(32);
+
+			nineTimes = num * multiple;
+
+			if (nineTimes < 10)
+				_putchar(32);
+
+			else
+				_putchar((nineTimes / 10) + '0');
+
+			_putchar((nineTimes % 10) + '0');
 		}
+
 		_putchar('\n');
 	}
 }
+
+
