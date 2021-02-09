@@ -1,29 +1,26 @@
 #include <stdio.h>
-
 /**
- * main - prints out the sum
+ * main - function calculates sum on multiples
+ *
  * Return: 0
  */
 
 int main(void)
 {
-	int num;
-	int three;
-	int five;
-	int total;
+	int num = 0;
+	int sum = 0;
 
-	num = 3;
-	total = 0;
 	while (num < 1024)
 	{
-		three = num % 3;
-		five = num % 5;
-		if (three == 0 || five == 0)
+		if (num % 3 == 0 || num % 5 == 0)
 		{
-			total += num;
+			sum += num;
 		}
+
 		num++;
 	}
-	printf("%i \n", total);
+
+	printf("%i\n", sum);
+
 	return (0);
 }
