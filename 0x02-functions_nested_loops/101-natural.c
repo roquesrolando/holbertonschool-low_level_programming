@@ -22,7 +22,6 @@ int main(void)
 		}
 		num++;
 	}
-	printf("%i ", total);
-	printf(" \n");
+	printf("%i \n", total);
 	return (0);
 }
