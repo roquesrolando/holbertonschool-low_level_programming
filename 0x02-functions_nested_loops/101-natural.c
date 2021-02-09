@@ -1,4 +1,10 @@
 #include <stdio.h>
+
+/**
+ * main - prints out the sum
+ * Return: 0
+ */
+
 int main(void)
 {
 	int num = 3;
@@ -17,4 +23,5 @@ int main(void)
 	}
 	printf("%i ", total);
 	printf(" \n");
+	return (0);
 }
