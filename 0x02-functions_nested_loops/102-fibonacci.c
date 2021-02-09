@@ -1,7 +1,8 @@
 #include <stdio.h>
 /*
- * main - prints fibonacci
+ * main - prints fibonacci numbers
  *
+ * Return: 0
  */
 
 int main(void)
@@ -15,21 +16,23 @@ int main(void)
 
 	printf("%lu, ", fib2);
 
-	count = 2;
+	count = 4;
 
 	while (count < num)
 
 	{
-
 		fib3 = fib1 + fib2;
 
 		count++;
 
-		printf("%lu, ", fib3);
+		printf("%lu", fib3);
 
 		fib1 = fib2;
 
 		fib2 = fib3;
+		if (count != 50)
+			printf(", ");
 	}
 	printf("\n");
+	return (0);
 }
