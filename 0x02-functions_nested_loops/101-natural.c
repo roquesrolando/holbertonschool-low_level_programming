@@ -11,6 +11,7 @@ int main(void)
 	int three;
 	int five;
 	int total = 0;
+
 	while (num < 1024)
 	{
 		three = num % 3;
