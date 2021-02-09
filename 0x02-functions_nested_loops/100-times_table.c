@@ -2,7 +2,7 @@
 /**
  * times_table - function prints multiples of 9
  *
- * @r: valued being sent
+ * @n: valued being sent
  */
 
 void print_times_tablet(int n)
