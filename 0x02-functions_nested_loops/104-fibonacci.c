@@ -8,13 +8,13 @@
 int main(void)
 {
 
-	double fib1 = 1, fib2 = 2, fib3, num, count = 0;
+	float fib1 = 1, fib2 = 2, fib3, num, count = 0;
 
 	num = 100;
 
-	printf("%.0lf, ", fib1);
+	printf("%.0f, ", fib1);
 
-	printf("%.0lf, ", fib2);
+	printf("%.0f, ", fib2);
 
 	count = 4;
 
@@ -25,7 +25,7 @@ int main(void)
 
 		count++;
 
-		printf("%.0lf", fib3);
+		printf("%.0f", fib3);
 
 		fib1 = fib2;
 
