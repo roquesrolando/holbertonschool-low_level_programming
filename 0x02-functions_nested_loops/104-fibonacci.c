@@ -10,11 +10,11 @@ int main(void)
 
 	double fib1 = 1, fib2 = 2, fib3, num, count = 0;
 
-	num = 99;
+	num = 100;
 
-	printf("%lf, ", fib1);
+	printf("%.0lf, ", fib1);
 
-	printf("%lf, ", fib2);
+	printf("%.0lf, ", fib2);
 
 	count = 4;
 
@@ -25,12 +25,12 @@ int main(void)
 
 		count++;
 
-		printf("%lf", fib3);
+		printf("%.0lf", fib3);
 
 		fib1 = fib2;
 
 		fib2 = fib3;
-		if (count != 99)
+		if (count != 100)
 			printf(", ");
 	}
 	printf("\n");
