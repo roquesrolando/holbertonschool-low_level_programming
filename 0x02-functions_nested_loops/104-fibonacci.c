@@ -12,9 +12,9 @@ int main(void)
 
 	num = 99;
 
-	printf("%lf, ", fib1);
+	printf("%.0lf, ", fib1);
 
-	printf("%lf, ", fib2);
+	printf("%.0lf, ", fib2);
 
 	count = 4;
 
@@ -25,7 +25,7 @@ int main(void)
 
 		count++;
 
-		printf("%lf", fib3);
+		printf("%.0lf", fib3);
 
 		fib1 = fib2;
 
