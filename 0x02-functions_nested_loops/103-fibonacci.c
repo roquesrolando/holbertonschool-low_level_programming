@@ -1,33 +1,31 @@
 #include <stdio.h>
 /**
- * main - prints fibonacci numbers
+ * main - funtion prints out sum of fibonacci numbers
  *
  * Return: 0
  */
-
 int main(void)
 {
+	int n = 0;
+	unsigned long int sum = 0;
+	unsigned long int prevSum1 = 0;
+	unsigned long int prevSum2 = 1;
+	unsigned long int newSum = 0;
 
-	unsigned long fib1 = 1, fib2 = 2, fib3 = 0, total;
-
-
-	while (fib3 <= 4000000)
-
+	while (sum <= 4000000)
 	{
-		fib3 = fib1 + fib2;
+		sum = prevSum1 + prevSum2;
 
-		printf("%lu", fib3);
+		prevSum1 = prevSum2;
+		prevSum2 = sum;
 
-		fib1 = fib2;
-
-		fib2 = fib3;
-
-		if ((fib3 % 2) == 0)
+		if ((sum % 2) == 0)
 		{
-			total += fib3;
+			newSum += sum;
 		}
+
+		n++;
 	}
-	printf("%lu\n", total);
+	printf("%lu\n", newSum);
 	return (0);
 }
-
