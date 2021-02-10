@@ -8,13 +8,13 @@
 int main(void)
 {
 
-	unsigned long fib1 = 1, fib2 = 2, fib3, num, count = 0;
+	double fib1 = 1, fib2 = 2, fib3, num, count = 0;
 
-	num = 100;
+	num = 99;
 
-	printf("%lu, ", fib1);
+	printf("%lf, ", fib1);
 
-	printf("%lu, ", fib2);
+	printf("%lf, ", fib2);
 
 	count = 4;
 
@@ -25,12 +25,12 @@ int main(void)
 
 		count++;
 
-		printf("%lu", fib3);
+		printf("%lf", fib3);
 
 		fib1 = fib2;
 
 		fib2 = fib3;
-		if (count != 100)
+		if (count != 99)
 			printf(", ");
 	}
 	printf("\n");
