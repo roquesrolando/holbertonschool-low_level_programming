@@ -11,7 +11,7 @@ void print_triangle(int big)
 
 	if (big <= 0)
 		_putchar('\n');
-	
+
 	for (space = 1; space <= big; space++)
 	{
 		for (hash = 1; hash <= big; hash++)
