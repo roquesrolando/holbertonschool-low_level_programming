@@ -6,7 +6,7 @@
  *
  */
 
-void print_line(int num)	
+void print_line(int num)
 {
 	int line;
 
