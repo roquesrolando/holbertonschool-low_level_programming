@@ -1,15 +1,15 @@
 #include "holberton.h"
-
 /**
- * more_numbers - prints from 0-14
+ * more_numbers - function multiplies two intergers
+ *
+ * Return: numbers
  */
-
 void more_numbers(void)
 {
-	int num; 
+	int num;
 	int total;
 
-	for (total = 0; total <= 10; total++)
+	for (total = 0; total < 10; total++)
 	{
 		for (num = 0; num < 15; num++)
 		{
