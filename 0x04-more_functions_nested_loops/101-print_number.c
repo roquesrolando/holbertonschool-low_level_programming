@@ -7,35 +7,19 @@
 
 void print_number(int n)
 {
-	unsigned int num = n;
-
+	unsigned int num;
 	if (n < 0)
 	{
-		num = -num;
+		num = -n;
 		_putchar('-');
-		_putchar((num / 10) + '0');
-		_putchar((num % 10) + '0');
 	}
-	else if (num == 0)
+	else
 	{
-		_putchar(num + '0');
+		num = n;
 	}
-	else if (num <= 99)
+	if (num /10)
 	{
-		_putchar((num / 10) + '0');
-		_putchar((num % 10) + '0');
+		print_number(num / 10);
 	}
-	else if (num <= 999)
-	{
-		_putchar(((num / 10) / 10) + '0');
-		_putchar(((num / 10) % 10) + '0');
-		_putchar((num % 10) + '0');
-	}
-	else if (num >= 999)
-	{
-		_putchar((((num / 10) / 10) / 10) + '0');
-		_putchar((((num / 10) / 10) % 10) + '0');
-		_putchar(((num / 10) % 10) + '0');
-		_putchar((num % 10) + '0');
-	}
+	_putchar(num % 10 + '0');
 }
