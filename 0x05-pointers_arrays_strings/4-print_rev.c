@@ -2,13 +2,12 @@
 /**
  * print_rev - prints a string, in reverse
  * @s: character value.
- *
  */
 void print_rev(char *s)
 {
 	int letter;
 
-	for (letter = 0; s[letter] != 0; letter++)
+	for (letter = 0; s[letter] != '\0'; letter++)
 		;
 	letter = letter - 1;
 	while (letter >= 0)
