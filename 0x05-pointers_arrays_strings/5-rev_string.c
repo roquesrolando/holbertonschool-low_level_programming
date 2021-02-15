@@ -2,7 +2,7 @@
 
 /**
  * rev_string - check the code for Holberton School students.
- *
+ * @s: character value
  * Return: Always 0.
  */
 void rev_string(char *s)
