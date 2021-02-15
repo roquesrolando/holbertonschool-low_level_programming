@@ -11,15 +11,15 @@ void print_array(int *arr, int num)
 {
 	int c;
 
-	for(c = 0; c < num; c++)
-			{
-				printf("%d", arr[c]);
+	for (c = 0; c < num; c++)
+	{
+		printf("%d", arr[c]);
 
-				if (c != num - 1)
-				{
-					printf(", ");
-				}
-			}
+		if (c != num - 1)
+		{
+			printf(", ");
+		}
+	}
 
 	printf("\n");
 }
