@@ -37,7 +37,7 @@ char *rot13(char *s)
 			if (s[i] == array_1[j])
 			{
 				s[i] = array_2[j];
-				break;
+				i++;
 			}
 		}
 	}
