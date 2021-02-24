@@ -4,7 +4,7 @@
  * @n: numbers to check
  * @num: numbers to use to check if it's prime
  *
- * Returns: if number is prime or not
+ * Return: if number is prime or not
  */
 
 int prime_finder(int n, int num)
