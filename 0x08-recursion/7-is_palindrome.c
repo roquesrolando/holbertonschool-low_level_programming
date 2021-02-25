@@ -28,7 +28,7 @@ int palindrome_check(char *s, char *i)
 int palindrome_mover(char *s, char *i)
 {
 	int count = 0;
-	
+
 	if (*s == '\0')
 		count = count + palindrome_check(s - 1, i);
 
