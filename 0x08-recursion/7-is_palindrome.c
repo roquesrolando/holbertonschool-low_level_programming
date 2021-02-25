@@ -30,10 +30,9 @@ int palindrome_mover(char *s, char *i)
 	int count = 0;
 
 	if (*s == '\0')
-		count = count + palindrome_check(s - 1, i);
+		palindrome_mover(s + 1, i);
 
-	palindrome_mover(s + 1, i);
-
+	count = count + palindrome_check(s - 1, i);
 	return (count);
 }
 /**
