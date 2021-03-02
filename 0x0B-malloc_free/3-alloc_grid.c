@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * **alloc_grind - creates pointer to 2D array
+ * **alloc_grid - creates pointer to 2D array
  * @width: wide of array
  * @height: height of array
  *
