@@ -3,7 +3,7 @@
 
 /**
  * *malloc_checked - it checks if malloc allocated memory
- * @b: size 
+ * @b: size
  *
  * Return: void pointer
  */
