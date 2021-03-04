@@ -1,10 +1,11 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- *
- *
- *
- *
+ * *_realloc - reallocates a memory block
+ * @ptr: pointer
+ * @old_size: old sized pointed to
+ * @new_size: new size of block
+ * Return: reallocated memor block
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
