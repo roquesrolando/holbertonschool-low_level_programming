@@ -1,10 +1,11 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
+ * *array_range - creates array of integer
+ * @min: smallest valuable
+ * @max: highest value
  *
- *
- *
- *
+ * Return: array of interger
  */
 
 int *array_range(int min, int max)
