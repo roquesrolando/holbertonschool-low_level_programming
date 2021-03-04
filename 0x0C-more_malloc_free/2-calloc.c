@@ -1,10 +1,11 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
+ * *_calloc - allocates memory
+ * @nmemb: size of string
+ * @size: size of character
  *
- *
- *
- *
+ * Return: memory allocated
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
