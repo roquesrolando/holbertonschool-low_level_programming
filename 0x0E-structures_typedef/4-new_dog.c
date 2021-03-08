@@ -72,9 +72,9 @@ char *_strcpy(char *dest, char *src)
  */
 int _strlen(char *s)
 {
-	int c = 0;
+	int c;
 
-	for (; *s != '\0'; s++)
+	for (c = 0; *s != '\0'; s++)
 	{
 		c++;
 	}
