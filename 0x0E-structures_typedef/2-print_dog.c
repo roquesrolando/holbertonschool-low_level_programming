@@ -6,11 +6,12 @@
  * print_dog - prints the structure
  * @d: dog structure
  *
+ * Return: nothing
  */
 
 void print_dog(struct dog *d)
 {
-	if (d != NULL)
+	if (d != 0)
 	{
 		if ((*d).name == 0)
 			printf("Name: (nil)\n");
@@ -27,4 +28,6 @@ void print_dog(struct dog *d)
 		else
 			printf("Owner: %s\n", (*d).owner);
 	}
+	else if (d == 0)
+		return;
 }
