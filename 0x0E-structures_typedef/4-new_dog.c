@@ -19,28 +19,31 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *new_name;
 	char *new_owner;
 
-	if (name == NULL)
+	if (name == 0)
 		return (NULL);
-	if (owner == NULL)
+	if (owner == 0)
 		return (NULL);
 
 	new_name = malloc((_strlen(name)) + 1);
-	if (new_name == NULL)
+	if (new_name == 0)
 	{
 		free(new_name);
 		return (NULL);
 	}
 	new_owner = malloc((_strlen(owner)) + 1);
-	if (new_owner == NULL)
+	if (new_owner == 0)
 	{
 		free(new_owner);
+		free(new_name);
 		return (NULL);
 	}
 
 	scoobs = malloc(sizeof(struct dog));
-	if (scoobs == NULL)
+	if (scoobs == 0)
 	{
 		free(scoobs);
+		free(new_name);
+		free(new_owner);
 		return (NULL);
 	}
 	(*scoobs).name = _strcpy(new_name, name);
