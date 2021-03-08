@@ -15,7 +15,7 @@ char *_strcpy(char *dest, char *src);
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *scoobs;
+	dog_t *scoobs;
 	char *new_name;
 	char *new_owner;
 
@@ -37,7 +37,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	scoobs = malloc(sizeof(struct dog));
+	scoobs = malloc(sizeof(dog_t));
 	(*scoobs).name = name;
 	(*scoobs).age = age;
 	(*scoobs).owner = owner;
