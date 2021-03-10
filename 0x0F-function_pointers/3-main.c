@@ -1,9 +1,11 @@
 #include "3-calc.h"
 
 /**
+ * main - perform simple operations
+ * @argc: count
+ * @argv: vectors
  *
- *
- *
+ * Return: result of simple operations
  */
 
 int main(int argc, char *argv[])

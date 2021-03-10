@@ -2,8 +2,9 @@
 
 /**
  * get_op_func - selects the correct function
+ * @s: function pass on
  *
- *
+ * Return: the result of selected function
  */
 
 int (*get_op_func(char *s))(int, int)
