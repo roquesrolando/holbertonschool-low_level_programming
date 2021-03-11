@@ -97,7 +97,7 @@ void print_string(va_list ap)
 
 	if (string == 0)
 	{
-		printf("(nill)");
+		printf("(nil)");
 		return;
 	}
 	printf("%s", string);
