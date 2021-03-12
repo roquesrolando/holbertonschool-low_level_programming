@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	for (i = 0; i < bts; i++)
+	for (i = 0; i < bts - 1; i++)
 	{
 		printf("%02hhx ", code[i]);
 	}
