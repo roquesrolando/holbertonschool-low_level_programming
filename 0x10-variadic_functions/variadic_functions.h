@@ -13,6 +13,12 @@ void print_int(va_list ap);
 void print_float(va_list ap);
 void print_string(va_list ap);
 
+/**
+ * struct function - struct function
+ * @function: conversion specifier
+ * @f: function pointer
+ */
+
 typedef struct function
 {
 	char function;
