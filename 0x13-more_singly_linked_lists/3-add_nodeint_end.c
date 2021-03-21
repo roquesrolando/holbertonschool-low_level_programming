@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node_end - add nodes to link list
+ * add_nodeint_end - add nodes to link list
  * @head: the address
  * @n: the int
  *
