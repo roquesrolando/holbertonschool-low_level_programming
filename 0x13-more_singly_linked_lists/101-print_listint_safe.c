@@ -12,12 +12,21 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *array[1024];
 	int j = 0, i = 0, nodes = 0;
 
+	if (head == NULL)
+	{
+		printf("-> [%p] 98\n", (void *)head);
+		exit(98);
+	}
+
 	while (head)
 	{
 		for (j = 0; j < i; j++)
 		{
 			if (array[j] == head)
+			{
+				printf("-> [%p] > 98\n", (void *)head);
 				exit(98);
+			}
 		}
 		array[i] = head;
 		printf("[%p] %i\n", (void *)head, head->n);
