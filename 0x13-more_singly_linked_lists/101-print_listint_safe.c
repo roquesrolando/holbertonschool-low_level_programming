@@ -18,7 +18,7 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			if (array[j] == head)
 			{
-				exit(98);
+				return (nodes);
 			}
 		}
 		array[i] = head;
