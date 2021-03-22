@@ -24,7 +24,7 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			if (array[j] == head)
 			{
-				printf("-> [%p] > 98\n", (void *)head);
+				printf("-> [%p] 98\n", (void *)head);
 				exit(98);
 			}
 		}
