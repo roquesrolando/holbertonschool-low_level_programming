@@ -9,21 +9,15 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-	const listint_t *array[1024];
-	int j = 0, i = 0;
+	listint_t *hold = head;
+	listint_t *new = head;
 
-	while (head)
+	while (hold && new && new->next)
 	{
-		for (j = 0; j < i; j++)
-		{
-			if (array[j] == head)
-			{
-				return (head);
-			}
-		}
-		array[i] = head;
-		head = head->next;
-		i++;
+		hold = hold->next;
+		new = new->next->next;
+		if (hold == new)
+			return (hold);
 	}
 	return (NULL);
 }
