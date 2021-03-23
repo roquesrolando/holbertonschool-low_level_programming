@@ -4,7 +4,7 @@
  * free_listint_safe - Frees a linked list
  * @h: The head
  *
- * Return: Nothing
+ * Return: size of list
  */
 
 size_t free_listint_safe(listint_t **h)
@@ -19,7 +19,6 @@ size_t free_listint_safe(listint_t **h)
 			if (array[j] == *h)
 			{
 				*h = NULL;
-				count++;
 				return (count);
 			}
 		}
@@ -30,8 +29,6 @@ size_t free_listint_safe(listint_t **h)
 		count++;
 		i++;
 	}
-	free(*h);
 	*h = NULL;
-	count++;
 	return (count);
 }
