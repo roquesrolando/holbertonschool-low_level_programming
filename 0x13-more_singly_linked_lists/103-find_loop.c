@@ -10,7 +10,7 @@
 listint_t *find_listint_loop(listint_t *head)
 {
 	const listint_t *array[1024];
-	int j = 0, i = 0, nodes = 0;
+	int j = 0, i = 0;
 
 	while (head)
 	{
@@ -23,7 +23,6 @@ listint_t *find_listint_loop(listint_t *head)
 		}
 		array[i] = head;
 		head = head->next;
-		nodes++;
 		i++;
 	}
 	return (NULL);
