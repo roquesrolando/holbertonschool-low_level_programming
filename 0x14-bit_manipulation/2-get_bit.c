@@ -14,7 +14,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int len;
 
 	len = _strlen(n);
-	if (len < index)
+	if (len - 1 < index)
 		return (-1);
 
 	for (i = 0; i < index; i++)
