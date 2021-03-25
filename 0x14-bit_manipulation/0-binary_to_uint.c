@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
+ * binary_to_uint - converts binary to unsigned int
+ * @b: binary number
  *
- *
- *
+ * Return: return converted number
  */
 
 unsigned int binary_to_uint(const char *b)
