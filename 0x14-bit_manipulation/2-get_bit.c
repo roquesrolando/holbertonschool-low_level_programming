@@ -24,9 +24,10 @@ int get_bit(unsigned long int n, unsigned int index)
 }
 
 /**
+ * _strlen - get the lenght of the binary
+ * @n: the number
  *
- *
- *
+ * Return: the lenght
  */
 
 int _strlen(unsigned long int n)
