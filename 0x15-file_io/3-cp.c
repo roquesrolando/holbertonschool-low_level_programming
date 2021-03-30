@@ -32,8 +32,13 @@ int main(int argc, char *argv[])
 	}
 	while ((scan = read(from, buff, 1024)) > 0)
 	{
+		if (scan == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read to %s\n", argv[2]);
+			exit(98);
+		}
 		written = write(to, buff, scan);
-		if (written != scan)
+		if (written == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
