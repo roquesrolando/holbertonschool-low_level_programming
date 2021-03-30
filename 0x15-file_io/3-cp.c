@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	while ((scan = read(from, buff, 1024)) > 0)
 	{
 		written = write(to, buff, scan);
-		if (written == -1)
+		if (written != scan)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
