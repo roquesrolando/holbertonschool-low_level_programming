@@ -1,4 +1,6 @@
 #include "holberton.h"
+
+int create_file(const char *filename, char *text_content);
 /**
  * main - copy file to another file
  * @argc: count
@@ -28,7 +30,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read to %s\n", argv[2]);
 		exit(98);
 	}
-	if ((scan = read(from, buff, 1024)) > 0)
+	while ((scan = read(from, buff, 1024)) > 0)
 	{
 		written = write(to, buff, scan);
 		if (written == -1)
