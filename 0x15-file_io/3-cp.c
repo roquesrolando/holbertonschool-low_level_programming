@@ -29,6 +29,11 @@ int main(int argc, char *argv[])
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read to %s\n", argv[2]);
 		close(from);
+		if (from == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", from);
+			exit(100);
+		}
 		exit(98);
 	}
 	while ((scan = read(from, buff, 1024)) > 0)
@@ -37,6 +42,18 @@ int main(int argc, char *argv[])
 		if (written == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(to);
+			if (to == -1)
+			{
+				dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", to);
+				exit(100);
+			}
+			close(from);
+			if (from == -1)
+			{
+				dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", from);
+				exit(100);
+			}
 			exit(99);
 		}
 	}
