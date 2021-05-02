@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - delete a node
+ * delete_dnodeint_at_index - delete a node
  * @head: the linked list
- * @idx: index to delete node
+ * @index: index to delete node
  *
  * Return: 1 if succeded or -1 if failed
  */
